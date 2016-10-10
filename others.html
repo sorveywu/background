@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>管理后台</title>
+    <link href="images/favicon.ico" rel="Shortcut Icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/layer/layer.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrap f-ma">
+            <div class="logo f-oh f-fl">
+                <a href=""><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            <div class="user-info f-fr">
+                <div class="user-avatar f-fl">
+                    <img src="images/avatar.jpg" alt="avatar" />
+                </div>
+                <div class="user-name f-fl f-dt">
+                    <p>吴边<span class="badge badge-primary">4</span></p>
+                </div>
+                <div class="user-action f-fl">
+                    <a href="javascript:void(0)">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bd f-ma">
+        <div class="container f-cb">
+            <div class="sidebar">
+                <div class="menu-box">
+                    <dl class="menu no-extra">
+                        <dt class="menu-title f-toe"><i class="fa fa-th-large fa-lg"></i>组件</dt>
+                        <dd class="menu-item"><a href="form.html">表单</a></dd>
+                        <dd class="menu-item"><a href="list.html">文章列表页</a></dd>
+                        <dd class="menu-item"><a href="button.html">按钮</a></dd>
+                        <dd class="menu-item selected"><a href="tab_link.html">tab标签（跳转）</a></dd>
+                        <dd class="menu-item"><a href="tab.html">tab标签（切换）</a></dd>
+                        <dd class="menu-item"><a href="table.html">表格</a></dd>
+                        <dd class="menu-item"><a href="others.html">其他</a></dd>
+                    </dl>
+                    <dl class="menu">
+                        <dt class="menu-title f-toe"><i class="fa fa-file-o fa-lg"></i>demo页面</dt>
+                        <dd class="menu-item"><a href="article.html">文章列表页</a></dd>
+                        <dd class="menu-item"><a href="edit.html">编辑页面</a></dd>
+                    </dl>
+                    <dl class="menu">
+                        <dt class="menu-title f-toe"><i class="fa fa-bullhorn fa-lg"></i>推广</dt>
+                        <dd class="menu-item"><a href="#">广告主</a></dd>
+                        <dd class="menu-item"><a href="#">流量主</a></dd>
+                    </dl>
+                    <dl class="menu">
+                        <dt class="menu-title f-toe"><i class="fa fa-pie-chart fa-lg"></i>统计</dt>
+                        <dd class="menu-item"><a href="#">用户分析<span class="badge badge-primary">4</span></a></dd>
+                        <dd class="menu-item"><a href="#">图文分析</a></dd>
+                        <dd class="menu-item"><a href="#">菜单分析</a></dd>
+                        <dd class="menu-item"><a href="#">消息分析</a></dd>
+                        <dd class="menu-item"><a href="#">接口分析</a></dd>
+                        <dd class="menu-item"><a href="#">网页分析</a></dd>
+                    </dl>
+                </div>
+            </div>
+
+
+<div class="main">
+    <div class="page-title">
+        <h2>页面标题</h2>
+    </div>
+    <div class="main-bd">
+        <div class="sub-title">
+            <h2>分页</h2>
+        </div>
+        <div class="page-wrap f-tar">
+            <div class="page-con">
+                <span class="page-nav-area">
+                    <a href="javascript:void(0);" class="page-prev"><i class="fa fa-caret-left"></i></a>
+                    <span class="page-num">1/6</span>
+                    <a href="javascript:void(0);" class="page-next"><i class="fa fa-caret-right"></i></a>
+                </span>
+                <span class="page-go-area">
+                    <input type="text" />
+                    <a href="javascript:void(0)" class="btn btn-short">跳转</a>
+                </span>
+            </div>
+        </div>
+        <div class="page-wrap f-tac">
+            <div class="page-con">
+                <span class="page-nav-area">
+                    <a href="javascript:void(0);" class="page-prev"><i class="fa fa-caret-left"></i></a>
+                    <span class="page-num">1/6</span>
+                    <a href="javascript:void(0);" class="page-next"><i class="fa fa-caret-right"></i></a>
+                </span>
+                <span class="page-go-area">
+                    <input type="text" />
+                    <a href="javascript:void(0)" class="btn btn-short">跳转</a>
+                </span>
+            </div>
+        </div>
+        <div class="page-wrap f-tal">
+            <div class="page-con">
+                <span class="page-nav-area">
+                    <a href="javascript:void(0);" class="page-prev"><i class="fa fa-caret-left"></i></a>
+                    <span class="page-num">1/6</span>
+                    <a href="javascript:void(0);" class="page-next"><i class="fa fa-caret-right"></i></a>
+                </span>
+                <span class="page-go-area">
+                    <input type="text" />
+                    <a href="javascript:void(0)" class="btn btn-short">跳转</a>
+                </span>
+            </div>
+        </div>
+        <pre>
+<font class="c-error">&lt;!-- 修改class f-tal 可控制分页显示位置，f-tal：居左，f-tac：居中，f-tar：居右 --&gt;</font>
+&lt;div class="page-wrap <font class="c-error">f-tal</font>"&gt;
+    &lt;div class="page-con"&gt;
+        &lt;span class="page-nav-area"&gt;
+            &lt;a href="javascript:void(0);" class="page-prev"&gt;&lt;i class="fa fa-caret-left"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;span class="page-num"&gt;1/6&lt;/span&gt;
+            &lt;a href="javascript:void(0);" class="page-next"&gt;&lt;i class="fa fa-caret-right"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/span&gt;
+        &lt;span class="page-go-area"&gt;
+            &lt;input type="text" /&gt;
+            &lt;a href="javascript:void(0)" class="btn btn-short"&gt;跳转&lt;/a&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+<span class="code-type">html</span></pre>
+    </div>
+
+    <div class="main-bd">
+        <div class="sub-title">
+            <h2>徽章</h2>
+        </div>
+        <div class="main-block">
+            <span class="badge">4</span>
+            <span class="badge badge-default">4</span>
+            <span class="badge badge-primary">4</span>
+            <span class="badge badge-info">14</span>
+            <span class="badge badge-success">124</span>
+            <span class="badge badge-warning">1234</span>
+            <span class="badge badge-error">44</span>
+
+
+        </div>
+
+        <div class="main-block">
+            <button class="btn btn-primary">与按钮组合使用<span class="badge badge-default">4</span></button>
+        </div>
+
+        <!-- tab标签 -->
+        <div class="link-tabs">
+            <span class="link-tab selected">
+                <a href="#">标签1</a>
+            </span>
+            <span class="link-tab">
+                <a href="#">与标签页组合使用<span class="badge badge-primary">4</span></a>
+            </span>
+        </div>
+
+        <pre>
+<font class="c-error">&lt;!-- 7种样式，徽章可与其他组件组合使用 --&gt;</font>
+&lt;span class="badge">4&lt;/span&gt;
+&lt;span class="badge badge-default"&gt;4&lt;/span&gt;
+&lt;span class="badge badge-primary"&gt;4&lt;/span&gt;
+&lt;span class="badge badge-info"&gt;14&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;124&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;1234&lt;/span&gt;
+&lt;span class="badge badge-error"&gt;44&lt;/span&gt;
+<span class="code-type">html</span></pre>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="footer-link f-ma f-tac">
+            <li><a href="#">腾讯大苏网</a></li>
+            <li><a href="http://wohewomen.cn">我和我们</a></li>
+            <li><a href="http://wangqiangblog.cn/">老王的博客</a></li>
+            <p>Copyright © 2012-2016 Tencent. All Rights Reserved.</p>
+        </ul>
+    </div>
+</body>
+<script src="js/common.js"></script>
+</html>
